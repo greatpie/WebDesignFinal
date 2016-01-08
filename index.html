@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>history of web page-from 0 to all</title>
+    <link rel="stylesheet" href="css/swiper-3.2.7.min.css">
+    <link rel="stylesheet" href="css/typeit.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            font-family: "Microsoft YaHei UI";
+            color: antiquewhite;
+        }
+
+        .swiper-container {
+            width: 100%;
+        }
+
+        .swiper-wrapper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+            color: black;
+        }
+
+        #start {
+            background: #404040;
+        }
+
+        #start_logo {
+            position: absolute;
+            top: 25%;
+            left: 20%;
+            width: 15%;
+        }
+
+        #start_text {
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            font-size: 24px;
+            color: antiquewhite;
+        }
+
+        .left {
+            width: 30%;
+            height: 100%;
+            background: #1F4E79;
+        }
+
+        #developer {
+            position: absolute;
+            width: 15%;
+            left: 7%;
+            top: 15%;
+            border: antiquewhite solid 4px;
+        }
+
+        #developer_detail {
+            position: absolute;
+            width: 26%;
+            top: 45%;
+            left: 2%;
+            color: antiquewhite;
+            text-align: center;
+        }
+
+        .right {
+            width: 70%;
+            height: 100%;
+        }
+
+        #first_page_tim {
+            position: absolute;
+            top: 30%;
+            left: 35%;
+            width: 60%;
+            height: 60%;
+            border: #1F4E79 solid 2px;
+        }
+
+        #origin_header {
+            position: absolute;
+            width: 60%;
+            top: 10%;
+            left: 35%;
+            color: black;
+        }
+
+        #origin_title {
+            width: 100%;
+            text-align: center;
+            display: block;
+        }
+
+        #origin_code {
+            margin-left: 30%;
+            margin-top: 5%;
+        }
+
+        .left_short {
+            width: 70%;
+            height: 100%;
+            background: #ffffff;
+        }
+
+        .right_short {
+            position: absolute;
+            left: 70%;
+            top: 0;
+            width: 30%;
+            height: 100%;
+            background: #C55A11;
+        }
+
+        #origin > p {
+            line-height: 30px;
+        }
+
+        .left_module {
+            position: absolute;
+            left: 5%;
+            top: 7%;
+            width: 60%;
+        }
+
+        .left_detail {
+            position: absolute;
+            top: 45%;
+            left: 5%;
+            width: 60%;
+        }
+
+        .left_detail > p {
+            margin-top: 5%;
+        }
+
+        .slider_title_left {
+            color: #ffffff;
+            font-size: 30px;
+            border-left: #ffffff solid 10px;
+            padding-left: 10px;
+        }
+
+        .slider_title_right {
+            right: 0;
+            color: #ffffff;
+            font-size: 30px;
+            border-right: #ffffff solid 10px;
+            padding-right: 10px;
+            text-align: right;
+        }
+
+        .apple {
+            position: absolute;
+            width: 40%;
+        }
+
+        #apple1 {
+            top: 20%;
+            right: 30%;
+        }
+
+        .jump_btn {
+            background: none;
+            border: #ffffff solid 2px;
+            padding: 3px;
+            color: #ffffff;
+            font-size: 20px;
+            font-family: "Microsoft YaHei UI";
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #apple1_btn {
+            position: absolute;
+            top: 55%;
+            right: 22%;
+        }
+
+        #js_coming_left {
+            background: #663366;
+        }
+
+        .right_detail {
+            position: absolute;
+            top: 45%;
+            right: 5%;
+            width: 60%;
+        }
+
+        .right_detail > p {
+            margin-top: 5%;
+        }
+
+        .right_module {
+            position: absolute;
+            right: 5%;
+            top: 7%;
+            width: 60%;
+        }
+
+        #input_text {
+            position: absolute;
+            border: #ffffff solid 2px;
+            background: none;
+            font-size: 20px;
+            padding: 2px;
+            width: 20%;
+            top: 30%;
+            left: 4%;
+        }
+
+        .click_btn {
+            background: #ffffff;
+            border: none;
+            color: #663366;
+            padding: 2px;
+            font-size: 20px;
+            position: absolute;
+            width: 10%;
+            text-align: center;
+            top: 50%;
+            left: 9%;
+        }
+
+        .click_btn:hover {
+            cursor: pointer;
+        }
+        #flash_right{
+            background: #336633;
+        }
+        #2048demo{
+            width: 10%;
+
+        }
+    </style>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" id="start">
+            <img id="start_logo" src="img/start_logo.png">
+            <span id="start_text" class="type-it"></span>
+        </div>
+        <div class="swiper-slide" id="origin">
+            <div class="left">
+                <div class="slider_title_left">原子时代</div>
+                <img src="img/tim.jpg" id="developer">
+
+                <div id="developer_detail">
+                    <h2>Tim Berners-Lee</h2>
+                    <br>
+
+                    <p>首个网站由Tim Berners-Lee在一台NeXT电脑上创建，它解释了万维网的概念，如何使用网页浏览器和如何建立一个网页服务器
+                        等普及型的内容。</p>
+
+                </div>
+            </div>
+            <div class="right">
+                <div id="origin_header">
+                    <span id="origin_title">这个页面在现代浏览器上仍然能正确解析，在那时还是用DD、DT这样的标签布局:</span>
+                    <img id="origin_code" src="img/origin_code.png">
+                </div>
+                <iframe id="first_page_tim" src="./pages/origin/index.html" scrolling="yes"></iframe>
+            </div>
+        </div>
+        <div class="swiper-slide" id="table_layout">
+            <div id="tb_left" class="left_short">
+                <img class="left_module" src="img/table.gif">
+
+                <div class="left_detail">
+
+                    <p>能够显示图片的浏览器的诞生，是促使网页设计这个行业诞生的重要先决条件。
+                        实际上在当时，最接近于信息结构化的概念，是HTML中已有的元素：表格（Table）。
+                        所以，David Siegel 在他的网页设计书《Creating Killer Sites》讲述了他设计优秀网站的
+                        秘诀：在表格中嵌套表格，将静态的表格和动态的表格以巧妙的方式结合到一起。尽管表格本
+                        身是用来承载数据的，用来承载内容和图片有点奇怪，但是在那个时代，这种方法依然显得颇为靠谱，并且大行其道。</p>
+
+                    <p>
+                        网页设计所面临的另外一个问题，就是如何保持网页那脆弱的结构。也正是因为这种需求，
+                        切片设计（Slicing Design）逐渐流行了起来。设计师创建出漂亮的网页布局，随后开发者
+                        将整个设计稿切片，找出呈现设计的最佳方法。另一方面，表格还有一些炫酷的功能，比如
+                        垂直对齐，以像素为单位或者以百分比来控制对齐。在那个时代，表格可是近乎栅格系统一般的
+                        灵活的设计神器，也正是因此，那个时代的开发者并不喜欢前端的代码。（表格嵌套表格有多乱？）
+                    </p>
+                </div>
+                <div id="tb_right" class="right_short">
+                    <div class="slider_title_right">表格布局</div>
+                    <img src="img/apple1.png" class="apple" id="apple1">
+                    <a href="resume.html" target="_blank" class="jump_btn" id="apple1_btn">以表格布局的苹果官网</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide" id="js_coming">
+            <div class="left" id="js_coming_left">
+                <div class="slider_title_left">来自JavaScript的救援</div>
+                <input type="text" id="input_text" placeholder="在此输入的文本将被alert" name="text" value="">
+
+                <div class="click_btn" id="alert_test">运行alert</div>
+            </div>
+            <div class="right">
+
+                <img src="img/js_coming.gif" class="right_module">
+
+                <div class="right_detail">
+                    <p>JavaScript的出现补足了尚且原始的HTML。举个例子，如果你想写个弹出窗，或者想动态修改某些对象的顺
+                        序？HTML不行，但是JS可以！不过此时JS的主要问题在于，它处于整个网页布局的顶层并且需要单独加载。
+                        很多时候它仅仅被懒惰的开发者用作一个简单的补丁，但如果使用得当，JS可以非常强大。今天，同样的功能
+                        如果CSS能实现，我们会尽量避免使用JS。不可否认的是，JS本身确实很强大，前端常用的jQuery，后端的
+                        Node.js都是不可多得的好东西。</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="swiper-slide" id="flash">
+            <div class="left_short">
+                <img src="img/flash.gif" class="left_module">
+                <div class="left_detail">
+                    <p>
+                        作为一门新技术，Flash为网页开发者/设计师带来了前所未有的自由，它打破了之前网页设计所固有的限制。
+                        借助Flash，设计师可以随心所欲地在网页上展现任何形状、布局、动画和交互，可以使用任何喜欢的字体，他
+                        们借助Flash熔于一体。所有的这一切最终会被打包成为一个文件，然后被发送到浏览器端显示出来。这也就意
+                        味着，用户只需要拥有最新的Flash插件和些许等待时间，就可以享有一个魔术般的网页。这是启动页面（splash pag
+                        es）、介绍动画以及各种交互特效的黄金时代。不幸的是，这种设计并不开放，也不利于搜索，还需要消耗计算机
+                        大量的运算能力。2007年，当苹果发布他们的第一台iPhone的时候，就决定彻底放弃Flash，也正是在这个时候，
+                        Flash开始走下坡路——至少在网页设计领域。
+                    </p>
+                </div>
+            </div>
+            <div class="right_short" id="flash_right">
+                <div class="slider_title_right">Flash：自由的黄金时代</div>
+            </div>
+        </div>
+        <!-- 分页器 -->
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/swiper-3.2.7.jquery.min.js"></script>
+<script src="js/typeit.min.js"></script>
+<script>
+    $(document).ready(function () {
+        h = $(window).height();
+        $('.swiper-container').css('height', h + 'px');
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            loop: false,
+            keyboardControl: true,
+            mousewheelControl: true,
+            mousewheelForceToAxis: true,
+            allowSwipeToPrev: true,
+            // 如果需要分页器
+            pagination: '.swiper-pagination',
+            paginationClickable: true
+        });
+        //打字机效果
+        $('.type-it').typeIt({
+            whatToType: ['故事是从1991年8月6日开始', 'console.log("the first page!")', 'the first page!', '请使用鼠标滚轮、键盘及右侧索引切换到下一页'],
+            typeSpeed: 150,
+            lifeLike: true,
+            showCursor: true,
+            breakLines: false,
+            breakWait: 200,
+            delayStart: 100
+        },function(){
+           setTimeout(mySwiper.slideNext(),300);
+
+        });
+        $("#alert_test").click(function () {
+            var value = $("#input_text").val();
+            alert("你输入了:" + value + "，将打开一个新页面");
+            window.open("resume.html");
+        });
+    });
+
+</script>
+</body>
+</html>
